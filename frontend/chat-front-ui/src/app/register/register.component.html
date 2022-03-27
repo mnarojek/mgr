@@ -1,0 +1,45 @@
+
+<section class="vh-100" style="background-color: #508bfc; position: relative">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+        <div class="card shadow-2-strong" style="border-radius: 1rem;">
+          <div class="signup-form">
+            <form #registerform="ngForm" (ngSubmit)="registerUser()">
+              <h2>Register</h2>
+              <p class="hint-text">Create your account. It's free and only takes a minute.</p>
+              <div class="form-group">
+                <div class="row">
+                  <div class="col"><input type="text" class="form-control" name="user_name" placeholder="Login" required="required" [(ngModel)]="user.userName"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" name="email" placeholder="Email" required="required" [(ngModel)]="user.email">
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control" name="password" placeholder="Password" required="required" [(ngModel)]="user.password">
+              </div>
+
+              <div class="form-group">
+                <div class="row">
+                  <div class="col"><input type="text" class="form-control" name="phone" placeholder="phone" required="required" [(ngModel)]="user.phone"></div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-check-label"><input type="checkbox" required="required"> I accept the <a href="#">Terms of Use</a> &amp; <a href="#">Privacy Policy</a></label>
+              </div>
+              <div class="form-group">
+                <button type="submit" class="btn btn-success btn-lg btn-block bg-primary">Register Now</button>
+              </div>
+            </form>
+            <div class="text-center">Already have an account? <a href="#">Sign in</a></div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
