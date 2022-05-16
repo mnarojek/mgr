@@ -38,7 +38,7 @@ public class UserResouce {
     @PostMapping("/login")
     public ResponseEntity<User> login(@RequestBody UserLoginRequest request){
         User userByLoginAndPassword = userService.findUserByLoginAndPassword(request.getUserName(), request.getPassword());
-        return  new ResponseEntity<>(userByLoginAndPassword, HttpStatus.OK);
+        return new ResponseEntity<>(userByLoginAndPassword, HttpStatus.OK);
     }
 
 

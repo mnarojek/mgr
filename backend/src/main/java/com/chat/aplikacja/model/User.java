@@ -17,19 +17,20 @@ public class User implements Serializable {
     private String name;
     private String lastname;
     private String imageUrl;
+    /*private byte[] img;*/
 
 
     public User() {
     }
 
-    public User(String username, String email, String password, String name, String lastname, String imageUrl) {
+    public User(String username, String email, String password, String name, String lastname, String imageUrl /*byte[] img*/) {
         this.username = username;
         this.email = email;
         this.password = password;
         this.name = name;
         this.lastname = lastname;
         this.imageUrl = imageUrl;
-
+        //this.img=img;
     }
 
 
@@ -92,6 +93,14 @@ public class User implements Serializable {
         this.imageUrl = imageUrl;
     }
 
+
+ /*   public byte[] getImg() {
+        return img;
+    }
+
+    public void setImg(byte[] img) {
+        this.img = img;
+    }*/
 
     @Override
     public String toString() {

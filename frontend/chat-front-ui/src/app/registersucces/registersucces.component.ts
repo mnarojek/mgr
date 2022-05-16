@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {RegistrationService} from "../registration.service";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-registersucces',
@@ -7,9 +9,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegistersuccesComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _service:RegistrationService, private _router:Router) { }
+
 
   ngOnInit(): void {
+  }
+
+  goToVotes($myParam: string = ''): void {
+    const navigationDetails: string[] = ['/login'];
+    if($myParam.length) {
+      navigationDetails.push($myParam);
+    }
+    this._router.navigate(navigationDetails);
+  }
+
+  confrimation(){
+    this._router.navigate(['/login'])
   }
 
 }

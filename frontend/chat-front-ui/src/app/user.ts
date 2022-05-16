@@ -1,9 +1,11 @@
 export class User {
   id:number;
   email:string;
-  userName:string;
+  username:string;
   password:string;
-  phone:number;
+  name:string;
+  lastname:string;
+
 
   constructor() {
   }

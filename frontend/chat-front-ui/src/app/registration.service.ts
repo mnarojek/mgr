@@ -20,4 +20,6 @@ export class RegistrationService {
   public registerUserFromRemote(user: User):Observable<any>{
     return this._http.post<any>("/users/add",user);
   }
+
+
 }

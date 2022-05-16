@@ -9,22 +9,25 @@
               <h2>Register</h2>
               <p class="hint-text">Create your account. It's free and only takes a minute.</p>
               <div class="form-group">
-                <div class="row">
-                  <div class="col"><input type="text" class="form-control" name="user_name" placeholder="Login" required="required" [(ngModel)]="user.userName"></div>
-                </div>
+                    <input type="text" class="form-control" name="userName" placeholder="Login" required="required" [(ngModel)]="user.username">
               </div>
-              <div class="form-group">
-                <input type="email" class="form-control" name="email" placeholder="Email" required="required" [(ngModel)]="user.email">
-              </div>
+
               <div class="form-group">
                 <input type="password" class="form-control" name="password" placeholder="Password" required="required" [(ngModel)]="user.password">
               </div>
 
               <div class="form-group">
-                <div class="row">
-                  <div class="col"><input type="text" class="form-control" name="phone" placeholder="phone" required="required" [(ngModel)]="user.phone"></div>
-                </div>
+                <input type="email" class="form-control" name="email" placeholder="Email" required="required" [(ngModel)]="user.email">
               </div>
+
+              <div class="form-group">
+                  <div class="col"><input type="text" class="form-control" name="name" placeholder="name" required="required" [(ngModel)]="user.name"></div>
+              </div>
+
+              <div class="form-group">
+                <div class="col"><input type="text" class="form-control" name="lastname" placeholder="last name" required="required" [(ngModel)]="user.lastname"></div>
+              </div>
+
 
               <div class="form-group">
                 <label class="form-check-label"><input type="checkbox" required="required"> I accept the <a href="#">Terms of Use</a> &amp; <a href="#">Privacy Policy</a></label>
@@ -33,6 +36,9 @@
                 <button type="submit" class="btn btn-success btn-lg btn-block bg-primary">Register Now</button>
               </div>
             </form>
+
+
+
             <div class="text-center">Already have an account? <a href="#">Sign in</a></div>
           </div>
 
